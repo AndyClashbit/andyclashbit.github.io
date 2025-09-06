@@ -90,6 +90,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            height: 100%;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(88, 166, 255, 0.1);
+            border-color: var(--accent-color);
         }
         
         .footer {
@@ -256,6 +263,43 @@
                         </div>
                     </div>
                     <h3 class="fs-6 mt-3">Node.js</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- GitHub Stats -->
+        <div class="mt-5 pt-5 border-top border-secondary-subtle">
+            <h2 class="text-center mb-5">Статистика GitHub</h2>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="stat-card">
+                        <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndyClashbit&theme=react-dark" alt="GitHub Activity Graph" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stat-card">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AndyClashbit&theme=2077" alt="Profile Details" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="stat-card">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AndyClashbit&theme=2077" alt="Repos per Language" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="stat-card">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AndyClashbit&theme=2077" alt="Most Commit Language" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="stat-card">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AndyClashbit&theme=2077" alt="Stats" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="stat-card">
+                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AndyClashbit&theme=2077&utcOffset=3" alt="Productive Time" class="img-fluid"/>
+                    </div>
                 </div>
             </div>
         </div>
