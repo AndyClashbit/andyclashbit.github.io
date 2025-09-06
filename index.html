@@ -97,6 +97,39 @@
             font-size: 0.9rem;
         }
 
+        .skill-circle-outer {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            background: conic-gradient(var(--accent-color) calc(var(--p) * 1%), var(--border-color) 0);
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+        .skill-circle-outer:hover {
+            transform: scale(1.05);
+        }
+        .skill-circle-inner {
+            width: 95px;
+            height: 95px;
+            border-radius: 50%;
+            background: var(--card-color);
+            display: grid;
+            place-items: center;
+        }
+        .skill-circle-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .skill-icon-light-bg {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 4px;
+        }
+
+        
+
     </style>
 </head>
 <body>
@@ -166,39 +199,63 @@
             </div>
         </div>
 
-        <!-- GitHub Stats -->
+        <!-- Skills Section -->
         <div class="mt-5">
-            <h2 class="text-center">Статистика GitHub</h2>
-            <div class="row g-4">
-                <div class="col-12">
-                    <div class="stat-card">
-                        <img src="https://github-readme-activity-graph.vercel.app/graph?username=AndyClashbit&theme=react-dark" alt="GitHub Activity Graph" class="img-fluid"/>
+            <h2 class="text-center mb-5">Ключевые навыки</h2>
+            <div class="row g-5 justify-content-center text-center">
+                <!-- Python -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="skill-circle-outer" style="--p:90;">
+                        <div class="skill-circle-inner">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="skill-circle-icon">
+                        </div>
                     </div>
+                    <h3 class="fs-6 mt-3">Python</h3>
                 </div>
-                <div class="col-lg-6">
-                    <div class="stat-card">
-                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AndyClashbit&theme=2077" alt="Profile Details" class="img-fluid"/>
+                <!-- HTML5 -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="skill-circle-outer" style="--p:95;">
+                        <div class="skill-circle-inner">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="skill-circle-icon">
+                        </div>
                     </div>
+                    <h3 class="fs-6 mt-3">HTML5</h3>
                 </div>
-                <div class="col-lg-6">
-                    <div class="stat-card">
-                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AndyClashbit&theme=2077" alt="Repos per Language" class="img-fluid"/>
+                <!-- CSS3 -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="skill-circle-outer" style="--p:85;">
+                        <div class="skill-circle-inner">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="skill-circle-icon">
+                        </div>
                     </div>
+                    <h3 class="fs-6 mt-3">CSS3</h3>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="stat-card">
-                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AndyClashbit&theme=2077" alt="Most Commit Language" class="img-fluid"/>
+                <!-- JavaScript -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="skill-circle-outer" style="--p:75;">
+                        <div class="skill-circle-inner">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="skill-circle-icon">
+                        </div>
                     </div>
+                    <h3 class="fs-6 mt-3">JavaScript</h3>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="stat-card">
-                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AndyClashbit&theme=2077" alt="Stats" class="img-fluid"/>
+                <!-- Flask -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="skill-circle-outer" style="--p:80;">
+                        <div class="skill-circle-inner">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" class="skill-circle-icon skill-icon-light-bg">
+                        </div>
                     </div>
+                    <h3 class="fs-6 mt-3">Flask</h3>
                 </div>
-                <div class="col-lg-4">
-                    <div class="stat-card">
-                        <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AndyClashbit&theme=2077&utcOffset=3" alt="Productive Time" class="img-fluid"/>
+                <!-- Node.js -->
+                <div class="col-lg-2 col-md-4 col-6">
+                    <div class="skill-circle-outer" style="--p:70;">
+                        <div class="skill-circle-inner">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" class="skill-circle-icon">
+                        </div>
                     </div>
+                    <h3 class="fs-6 mt-3">Node.js</h3>
                 </div>
             </div>
         </div>
@@ -206,10 +263,12 @@
     </main>
 
     <footer class="footer text-center py-4">
-        <p>&copy; 2025 Andy Clashbit. Сделано с ❤️</p>
+        <p>&copy; 2025 Andy Clashbit</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
 </body>
 </html>
